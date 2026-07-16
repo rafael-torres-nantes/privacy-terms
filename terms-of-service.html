@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Termos de Uso — {{NOME_DO_APP}}</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<!--
+  TEMPLATE DE TERMOS DE USO — reutilizável entre aplicativos.
+  Fixo em todos os apps: operador (Rafael Torres Nantes, MEI, CNPJ 62.244.560/0001-49),
+  contato (rafatorresnantes@gmail.com), legislação brasileira e foro de Campo Grande/MS.
+  Preencha os {{PLACEHOLDERS}} por aplicativo e remova as seções opcionais que não se aplicam.
+  Não constitui parecer jurídico; valide com advogado antes do go-live.
+-->
+<body>
+  <div class="wrap">
+    <a class="backlink" href="index.html">&larr; Documentos legais</a>
+    <header class="doc">
+      <h1>Termos de Uso</h1>
+      <!-- {{DATA_ATUALIZACAO}} ex.: 15 de julho de 2026 -->
+      <p class="updated">Última atualização: {{DATA_ATUALIZACAO}}</p>
+    </header>
+
+    <h2>1. Aceitação dos Termos</h2>
+    <p>Ao acessar ou utilizar o aplicativo <strong>{{NOME_DO_APP}}</strong> ("Aplicativo"), operado
+      por <strong>Rafael Torres Nantes</strong> (MEI, CNPJ 62.244.560/0001-49) ("nós"), você
+      ("Usuário") concorda integralmente com estes Termos de Uso. Caso não concorde, não utilize o
+      Aplicativo.</p>
+
+    <h2>2. Descrição do Serviço</h2>
+    <!-- {{DESCRICAO_DO_SERVICO}} — descreva em 1-3 frases o que o Aplicativo faz. -->
+    <p>{{DESCRICAO_DO_SERVICO}}</p>
+    <!--
+      {{FUNCIONALIDADES}} — liste as principais funcionalidades. Exemplo:
+        <li>Coleta o cadastro voluntário do usuário por meio de formulário;</li>
+        <li>Processa os dados informados para prestar o serviço;</li>
+        <li>Apresenta ao usuário/administrador um painel com os resultados.</li>
+    -->
+    <ul>
+      {{FUNCIONALIDADES}}
+    </ul>
+
+    <!--
+      Seção 3 OPCIONAL — inclua apenas se o app tem perfis/papéis distintos de usuário.
+      Remova se todos os usuários têm o mesmo papel.
+    -->
+    <h2>3. Perfis de Usuário</h2>
+    <!--
+      {{PERFIS_DE_USUARIO}} — descreva cada perfil. Exemplo:
+        <li><strong>Administrador:</strong> efetua login para gerenciar o serviço e visualizar dados.</li>
+        <li><strong>Usuário final:</strong> utiliza as funcionalidades públicas do Aplicativo.</li>
+    -->
+    <ul>
+      {{PERFIS_DE_USUARIO}}
+    </ul>
+
+    <h2>4. Elegibilidade</h2>
+    <p>O Usuário declara ter capacidade civil plena e idade mínima de {{IDADE_MINIMA}} anos, ou estar
+      devidamente autorizado e representado, para utilizar o Aplicativo.</p>
+
+    <h2>5. Cadastro e Veracidade das Informações</h2>
+    <p>O Usuário é responsável pela veracidade e atualização dos dados informados. Dados falsos, de
+      terceiros sem autorização, ou que violem direitos poderão ser removidos.</p>
+
+    <h2>6. Uso Aceitável</h2>
+    <p>O Usuário compromete-se a <strong>não</strong>:</p>
+    <ul>
+      <li>Utilizar o Aplicativo para fins ilícitos ou não autorizados;</li>
+      <li>Cadastrar dados de terceiros sem o devido consentimento;</li>
+      <li>Tentar acessar áreas restritas, contas de outros usuários ou o painel administrativo sem autorização;</li>
+      <li>Interferir no funcionamento, na segurança ou na infraestrutura do Aplicativo;</li>
+      <li>Utilizar meios automatizados para sobrecarregar ou explorar o Aplicativo.</li>
+    </ul>
+
+    <!--
+      Seção 7 OPCIONAL — inclua apenas se o app integra plataformas de terceiros
+      (ex.: Meta/Instagram/Facebook, Google). Remova se não houver integração.
+    -->
+    <h2>7. Integrações com plataformas de terceiros</h2>
+    <p>{{DESCRICAO_INTEGRACAO_PLATAFORMAS}} O uso dessas integrações também está sujeito aos termos e
+      políticas das respectivas plataformas. Não somos afiliados a essas empresas; suas marcas
+      pertencem aos respectivos titulares.</p>
+
+    <h2>8. Privacidade e Proteção de Dados</h2>
+    <p>O tratamento de dados pessoais é regido pela nossa
+      <a href="privacy-policy.html">Política de Privacidade</a>, que integra estes Termos, e observa a
+      <strong>Lei Geral de Proteção de Dados (Lei nº 13.709/2018 – LGPD)</strong>. Ao utilizar o
+      Aplicativo, o Usuário declara ciência e concordância com o tratamento de dados ali descrito.</p>
+
+    <h2>9. Propriedade Intelectual</h2>
+    <p>O código, a marca, o layout e os conteúdos do Aplicativo pertencem a
+      <strong>Rafael Torres Nantes</strong> ou a seus licenciadores. É vedada a reprodução,
+      distribuição ou modificação sem autorização prévia por escrito.</p>
+
+    <h2>10. Isenção de Garantias e Limitação de Responsabilidade</h2>
+    <p>O Aplicativo é fornecido "no estado em que se encontra". Empenhamo-nos em manter a
+      disponibilidade e a precisão do serviço, mas <strong>não garantimos</strong> que estará livre de
+      erros, interrupções ou de imprecisões decorrentes de limitações de serviços de terceiros. Na
+      máxima extensão permitida pela lei, não nos responsabilizamos por danos indiretos, incidentais
+      ou consequenciais decorrentes do uso do Aplicativo.</p>
+
+    <h2>11. Suspensão e Encerramento</h2>
+    <p>Reservamo-nos o direito de suspender ou encerrar o acesso de qualquer Usuário que viole estes
+      Termos, bem como de descontinuar o Aplicativo, no todo ou em parte, a qualquer tempo.</p>
+
+    <h2>12. Alterações dos Termos</h2>
+    <p>Podemos alterar estes Termos a qualquer momento. A versão vigente será sempre a publicada em
+      <a href="{{URL_TERMOS}}">{{URL_TERMOS}}</a>, com a respectiva data de atualização. O uso
+      continuado após alterações implica concordância com a versão revisada.</p>
+
+    <h2>13. Legislação Aplicável e Foro</h2>
+    <p>Estes Termos são regidos pelas leis da <strong>República Federativa do Brasil</strong>. Fica
+      eleito o foro da comarca de <strong>Campo Grande/MS</strong> para dirimir quaisquer
+      controvérsias, com renúncia a qualquer outro, por mais privilegiado que seja.</p>
+
+    <h2>14. Contato</h2>
+    <p>Dúvidas sobre estes Termos podem ser encaminhadas para
+      <a href="mailto:rafatorresnantes@gmail.com">rafatorresnantes@gmail.com</a>.</p>
+
+    <footer class="doc">
+      {{NOME_DO_APP}} — operado por Rafael Torres Nantes (MEI, CNPJ 62.244.560/0001-49).
+      <a href="privacy-policy.html">Política de Privacidade</a>.
+    </footer>
+  </div>
+</body>
+</html>

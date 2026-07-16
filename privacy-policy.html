@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidade — {{NOME_DO_APP}}</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<!--
+  TEMPLATE DE POLÍTICA DE PRIVACIDADE (LGPD) — reutilizável entre aplicativos.
+  Fixo em todos os apps: operador (Rafael Torres Nantes, MEI, CNPJ 62.244.560/0001-49),
+  contato/DPO (rafatorresnantes@gmail.com) e a estrutura legal.
+  Preencha os {{PLACEHOLDERS}} por aplicativo e remova as seções opcionais que não se aplicam.
+  Não constitui parecer jurídico; valide com advogado antes do go-live.
+-->
+<body>
+  <div class="wrap">
+    <a class="backlink" href="index.html">&larr; Documentos legais</a>
+    <header class="doc">
+      <h1>Política de Privacidade</h1>
+      <!-- {{DATA_ATUALIZACAO}} ex.: 15 de julho de 2026 -->
+      <p class="updated">Última atualização: {{DATA_ATUALIZACAO}}</p>
+    </header>
+
+    <h2>1. Quem somos (Controlador dos Dados)</h2>
+    <p>O aplicativo <strong>{{NOME_DO_APP}}</strong> ("Aplicativo") é operado por
+      <strong>Rafael Torres Nantes</strong> (MEI, CNPJ 62.244.560/0001-49) ("nós"), que atua como
+      <strong>controlador</strong> dos dados pessoais nos termos da
+      <strong>Lei Geral de Proteção de Dados (Lei nº 13.709/2018 – LGPD)</strong>.</p>
+    <p>Esta Política explica quais dados coletamos, para que os usamos, com quem os compartilhamos e
+      como você pode exercer seus direitos.</p>
+
+    <h2>2. Dados que coletamos</h2>
+    <!--
+      {{TABELA_DE_DADOS_COLETADOS}} — liste os dados coletados por ESTE app e a finalidade de cada um.
+      Exemplo:
+        <tr><td>Nome</td><td>Identificar o usuário</td></tr>
+        <tr><td>E-mail</td><td>Contato e autenticação</td></tr>
+        <tr><td>Conteúdo enviado pelo usuário</td><td>Prestar o serviço solicitado</td></tr>
+    -->
+    <table>
+      <thead><tr><th>Dado</th><th>Finalidade</th></tr></thead>
+      <tbody>
+        {{TABELA_DE_DADOS_COLETADOS}}
+      </tbody>
+    </table>
+    <!--
+      Bloco OPCIONAL: use se o app coleta conteúdo que possa conter dados de terceiros
+      (ex.: capturas de tela, uploads, listas de contatos). Remova se não se aplicar.
+    -->
+    <blockquote>⚠️ {{AVISO_DADOS_DE_TERCEIROS}} O usuário é responsável por ter autorização de
+      terceiros cujos dados apareçam em conteúdo enviado, ou por ocultá-los. Aplicamos minimização e
+      retenção reduzida a esse conteúdo (ver seção 6).</blockquote>
+
+    <h2>3. Finalidades e base legal</h2>
+    <!--
+      {{TABELA_FINALIDADES_BASE_LEGAL}} — para cada finalidade, indique a base legal da LGPD.
+      Exemplo:
+        <tr><td>Prestar o serviço ao usuário</td><td><strong>Execução de contrato</strong> (art. 7º, V)</td></tr>
+        <tr><td>Enviar comunicações e novidades</td><td><strong>Consentimento</strong> (art. 7º, I)</td></tr>
+        <tr><td>Autenticar acessos e proteger o serviço</td><td>Legítimo interesse / segurança</td></tr>
+        <tr><td>Cumprir obrigações legais e regulatórias</td><td>Obrigação legal</td></tr>
+    -->
+    <table>
+      <thead><tr><th>Finalidade</th><th>Base legal (LGPD)</th></tr></thead>
+      <tbody>
+        {{TABELA_FINALIDADES_BASE_LEGAL}}
+      </tbody>
+    </table>
+    <p>Quando a base legal for o <strong>consentimento</strong>, ele é coletado por
+      <strong>aceite explícito</strong> (opção não pré-marcada), com registro de data e hora.</p>
+
+    <!--
+      Seção 4 OPCIONAL — use apenas se o app integra plataformas de terceiros
+      (ex.: Meta/Instagram/Facebook, Google, etc.) e trata dados obtidos por essas APIs.
+      Remova a seção inteira se não houver integração.
+    -->
+    <h2>4. Uso de dados obtidos de plataformas de terceiros</h2>
+    <p>{{DESCRICAO_INTEGRACAO_PLATAFORMAS}} Em conformidade com os termos dessas plataformas,
+      declaramos que os dados obtidos por meio delas:</p>
+    <ul>
+      <li>São usados <strong>somente</strong> para a finalidade descrita nesta Política;</li>
+      <li><strong>Não são vendidos</strong>, alugados ou comercializados;</li>
+      <li><strong>Não são usados</strong> para publicidade direcionada nem para qualquer finalidade estranha ao serviço;</li>
+      <li>São compartilhados apenas com os operadores estritamente necessários (ver seção 5).</li>
+    </ul>
+
+    <h2>5. Compartilhamento com terceiros (operadores)</h2>
+    <p>Utilizamos provedores que atuam como <strong>operadores</strong> de dados, exclusivamente para
+      viabilizar o serviço:</p>
+    <!--
+      {{LISTA_DE_OPERADORES}} — liste os operadores usados por ESTE app.
+      Exemplo:
+        <li><strong>Amazon Web Services (AWS)</strong> — hospedagem, banco de dados, armazenamento e autenticação;</li>
+        <li><strong>Provedor de e-mail transacional</strong> — envio de mensagens ao usuário.</li>
+    -->
+    <ul>
+      {{LISTA_DE_OPERADORES}}
+    </ul>
+    <p>Não compartilhamos seus dados com terceiros para fins de marketing.</p>
+
+    <h2>6. Retenção e eliminação</h2>
+    <ul>
+      <li>Mantemos os dados apenas <strong>enquanto necessários</strong> às finalidades desta Política
+        e pelo prazo exigido para o cumprimento de obrigações legais.</li>
+      <li>Conteúdo sensível enviado pelo usuário é retido pelo menor tempo possível e eliminado assim
+        que cumprir sua finalidade.</li>
+      <li>Encerradas as finalidades, os dados são <strong>eliminados</strong> ou <strong>anonimizados</strong>.</li>
+    </ul>
+
+    <h2>7. Segurança</h2>
+    <p>Adotamos medidas técnicas e organizacionais compatíveis, incluindo <strong>criptografia em
+      repouso</strong>, <strong>controle de acesso</strong>, <strong>restrição de áreas
+      administrativas a usuários autenticados</strong> e registro de acessos.</p>
+
+    <h2>8. Seus direitos (LGPD)</h2>
+    <p>Você pode, a qualquer momento, solicitar:</p>
+    <ul>
+      <li><strong>Confirmação</strong> da existência de tratamento e <strong>acesso</strong> aos seus dados;</li>
+      <li><strong>Correção</strong> de dados incompletos, inexatos ou desatualizados;</li>
+      <li><strong>Eliminação</strong> dos dados tratados com base no consentimento;</li>
+      <li><strong>Portabilidade</strong>, <strong>informação</strong> sobre compartilhamentos e <strong>revogação do consentimento</strong>;</li>
+      <li><strong>Oposição</strong> a tratamento em desacordo com a lei.</li>
+    </ul>
+
+    <h3>Como excluir seus dados</h3>
+    <p>Para solicitar a <strong>exclusão</strong> dos seus dados, envie um pedido para
+      <a href="mailto:rafatorresnantes@gmail.com">rafatorresnantes@gmail.com</a> com o assunto
+      "Exclusão de dados", informando os identificadores usados no cadastro. Atenderemos no prazo legal.</p>
+
+    <h2>9. Dados de crianças e adolescentes</h2>
+    <p>O Aplicativo destina-se a maiores de {{IDADE_MINIMA}} anos. Não coletamos intencionalmente
+      dados de menores. Caso identificado, o dado será eliminado.</p>
+
+    <!--
+      Seção 10 OPCIONAL — use para contextos regulados (ex.: eleitoral, saúde, financeiro)
+      que exijam avisos adicionais. Remova se não se aplicar.
+    -->
+    <h2>10. Contexto específico</h2>
+    <p>{{CONTEXTO_ESPECIFICO}}</p>
+
+    <h2>11. Transferência internacional</h2>
+    <p>Alguns provedores podem processar dados em servidores fora do Brasil. Nesses casos, exigimos
+      salvaguardas compatíveis com a LGPD.</p>
+
+    <h2>12. Alterações desta Política</h2>
+    <p>Podemos atualizar esta Política. A versão vigente é sempre a publicada em
+      <a href="{{URL_POLITICA_PRIVACIDADE}}">{{URL_POLITICA_PRIVACIDADE}}</a>, com a data de
+      atualização indicada no topo.</p>
+
+    <h2>13. Encarregado / Contato (DPO)</h2>
+    <p>Para exercer seus direitos ou tirar dúvidas sobre privacidade, contate o encarregado pelo
+      tratamento de dados:</p>
+    <ul>
+      <li><strong>Nome/Responsável:</strong> Rafael Torres Nantes</li>
+      <li><strong>E-mail:</strong> <a href="mailto:rafatorresnantes@gmail.com">rafatorresnantes@gmail.com</a></li>
+    </ul>
+
+    <footer class="doc">
+      {{NOME_DO_APP}} — operado por Rafael Torres Nantes (MEI, CNPJ 62.244.560/0001-49).
+      <a href="terms-of-service.html">Termos de Uso</a>.
+    </footer>
+  </div>
+</body>
+</html>
