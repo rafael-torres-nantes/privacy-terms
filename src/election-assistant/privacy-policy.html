@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidade — Election Assistant</title>
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <a class="backlink" href="index.html">&larr; Documentos legais</a>
+    <header class="doc">
+      <h1>Política de Privacidade</h1>
+      <p class="updated">Última atualização: 15 de julho de 2026</p>
+    </header>
+
+    <h2>1. Quem somos (Controlador dos Dados)</h2>
+    <p>O aplicativo <strong>Election Assistant</strong> ("Aplicativo") é operado por
+      <strong>Rafael Torres Nantes</strong> (MEI, CNPJ 62.244.560/0001-49) ("nós"), que atua como
+      <strong>controlador</strong> dos dados pessoais nos termos da
+      <strong>Lei Geral de Proteção de Dados (Lei nº 13.709/2018 – LGPD)</strong>.</p>
+    <p>Esta Política explica quais dados coletamos, para que os usamos, com quem os compartilhamos e
+      como você pode exercer seus direitos.</p>
+
+    <h2>2. Dados que coletamos</h2>
+
+    <h3>2.1. Dados fornecidos por você (apoiador), no cadastro</h3>
+    <table>
+      <thead><tr><th>Dado</th><th>Finalidade</th></tr></thead>
+      <tbody>
+        <tr><td>Nome</td><td>Identificar o apoiador</td></tr>
+        <tr><td><code>@</code> (usuário) do Instagram</td><td>Cruzar com o engajamento na publicação</td></tr>
+        <tr><td>Celular</td><td>Vincular ao WhatsApp / bot de verificação</td></tr>
+        <tr><td>E-mail</td><td>Contato</td></tr>
+        <tr><td>Cidade / Estado</td><td>Segmentação geográfica da campanha</td></tr>
+        <tr><td>Prints (capturas de tela) enviados ao bot</td><td>Evidência de cumprimento de tarefa (ex.: encaminhamento)</td></tr>
+        <tr><td>Consentimento LGPD e data/hora do aceite</td><td>Comprovar a base legal do tratamento</td></tr>
+      </tbody>
+    </table>
+    <blockquote>⚠️ Prints podem conter dados de terceiros (nomes/fotos de contatos). O apoiador é
+      responsável por ter autorização desses terceiros ou por ocultar tais dados. Aplicamos
+      minimização e retenção reduzida a esse conteúdo (ver seção 6).</blockquote>
+
+    <h3>2.2. Dados obtidos das plataformas da Meta (Instagram/Facebook)</h3>
+    <p>Por meio das <strong>APIs oficiais da Meta (Graph API)</strong> e de serviços auxiliares de
+      coleta, lemos dados de <strong>engajamento público</strong> nas publicações da página que
+      <strong>nós administramos</strong>, tais como:</p>
+    <ul>
+      <li>Comentários na publicação (autor e conteúdo do comentário);</li>
+      <li>Curtidas/reações na publicação (usuários que curtiram);</li>
+      <li>Reposts/compartilhamentos e menções em stories relativos à publicação.</li>
+    </ul>
+    <p>Esses dados são usados exclusivamente para <strong>verificar se o apoiador cadastrado cumpriu
+      as tarefas de engajamento</strong> da campanha. Não coletamos mensagens privadas nem dados de
+      pessoas que não interagiram com a publicação-alvo.</p>
+
+    <h3>2.3. Dados de administradores</h3>
+    <p>Administradores autenticam-se via <strong>AWS Cognito</strong>; tratamos suas credenciais e
+      identificadores de acesso apenas para autenticação e controle do painel.</p>
+
+    <h2>3. Finalidades e base legal</h2>
+    <table>
+      <thead><tr><th>Finalidade</th><th>Base legal (LGPD)</th></tr></thead>
+      <tbody>
+        <tr><td>Cadastrar o apoiador e medir seu engajamento na campanha</td><td><strong>Consentimento</strong> (art. 7º, I)</td></tr>
+        <tr><td>Cruzar cadastro com dados públicos de engajamento</td><td>Consentimento / legítimo interesse da campanha</td></tr>
+        <tr><td>Autenticar administradores e proteger o painel</td><td>Execução e segurança do serviço</td></tr>
+        <tr><td>Cumprir obrigações legais e regulatórias</td><td>Obrigação legal</td></tr>
+      </tbody>
+    </table>
+    <p>O consentimento do apoiador é coletado por <strong>aceite explícito</strong> (checkbox não
+      pré-marcado) no formulário de cadastro, com registro de data e hora.</p>
+
+    <h2>4. Uso dos dados obtidos da Plataforma Meta</h2>
+    <p>Em conformidade com os <strong>Termos da Plataforma Meta</strong>, declaramos que os dados
+      obtidos via Instagram e Facebook:</p>
+    <ul>
+      <li>São usados <strong>somente</strong> para a finalidade de verificação de engajamento descrita nesta Política;</li>
+      <li><strong>Não são vendidos</strong>, alugados ou comercializados;</li>
+      <li><strong>Não são usados</strong> para publicidade direcionada, criação de perfis para terceiros, ou qualquer finalidade estranha à campanha;</li>
+      <li>São compartilhados apenas com os operadores estritamente necessários (ver seção 5).</li>
+    </ul>
+
+    <h2>5. Compartilhamento com terceiros (operadores)</h2>
+    <p>Utilizamos provedores que atuam como <strong>operadores</strong> de dados, exclusivamente para
+      viabilizar o serviço:</p>
+    <ul>
+      <li><strong>Amazon Web Services (AWS)</strong> — hospedagem, banco de dados (DynamoDB), armazenamento (S3), autenticação (Cognito) e funções de processamento (Lambda);</li>
+      <li><strong>Apify</strong> — serviço de coleta de dados públicos de engajamento;</li>
+      <li><strong>Meta Platforms</strong> — Graph API do Instagram/Facebook e API do WhatsApp Business (Cloud API).</li>
+    </ul>
+    <p>Não compartilhamos seus dados com terceiros para fins de marketing.</p>
+
+    <h2>6. Retenção e eliminação</h2>
+    <ul>
+      <li>Mantemos os dados de cadastro apenas <strong>enquanto durar a campanha</strong> e pelo prazo necessário ao cumprimento de obrigações legais.</li>
+      <li><strong>Prints</strong> enviados ao bot são retidos pelo menor tempo possível e <strong>eliminados após o encerramento da campanha</strong> ou tão logo cumpram sua finalidade probatória.</li>
+      <li>Encerradas as finalidades, os dados são <strong>eliminados</strong> ou <strong>anonimizados</strong>.</li>
+    </ul>
+
+    <h2>7. Segurança</h2>
+    <p>Adotamos medidas técnicas e organizacionais compatíveis, incluindo <strong>criptografia em
+      repouso</strong> (S3/DynamoDB), <strong>controle de acesso por IAM</strong>, <strong>acesso ao
+      painel restrito a administradores autenticados (Cognito)</strong> e registro de acessos.</p>
+
+    <h2>8. Seus direitos (LGPD)</h2>
+    <p>Você pode, a qualquer momento, solicitar:</p>
+    <ul>
+      <li><strong>Confirmação</strong> da existência de tratamento e <strong>acesso</strong> aos seus dados;</li>
+      <li><strong>Correção</strong> de dados incompletos, inexatos ou desatualizados;</li>
+      <li><strong>Eliminação</strong> dos dados tratados com base no consentimento;</li>
+      <li><strong>Portabilidade</strong>, <strong>informação</strong> sobre compartilhamentos e <strong>revogação do consentimento</strong>;</li>
+      <li><strong>Oposição</strong> a tratamento em desacordo com a lei.</li>
+    </ul>
+
+    <h3>Como excluir seus dados</h3>
+    <p>Para solicitar a <strong>exclusão</strong> dos seus dados (incluindo os obtidos via Meta),
+      envie um pedido para <a href="mailto:rafatorresnantes@gmail.com">rafatorresnantes@gmail.com</a>
+      com o assunto "Exclusão de dados" informando o nome e o <code>@</code> do Instagram cadastrado.
+      Atenderemos no prazo legal.</p>
+
+    <h2>9. Dados de crianças e adolescentes</h2>
+    <p>O Aplicativo destina-se a maiores de 18 anos. Não coletamos intencionalmente dados de menores.
+      Caso identificado, o dado será eliminado.</p>
+
+    <h2>10. Contexto eleitoral</h2>
+    <p>Por se tratar de contexto eleitoral, o tratamento observa também a legislação eleitoral
+      aplicável. O engajamento é voluntário e o cadastro não condiciona nenhum direito do apoiador.</p>
+
+    <h2>11. Transferência internacional</h2>
+    <p>Provedores como AWS, Apify e Meta podem processar dados em servidores fora do Brasil. Nesses
+      casos, exigimos salvaguardas compatíveis com a LGPD.</p>
+
+    <h2>12. Alterações desta Política</h2>
+    <p>Podemos atualizar esta Política. A versão vigente é sempre a publicada em
+      <a href="https://rafael-torres-nantes.github.io/privacy-terms/src/election-assistant/privacy-policy.html">https://rafael-torres-nantes.github.io/privacy-terms/src/election-assistant/privacy-policy.html</a>,
+      com a data de atualização indicada no topo.</p>
+
+    <h2>13. Encarregado / Contato (DPO)</h2>
+    <p>Para exercer seus direitos ou tirar dúvidas sobre privacidade, contate o encarregado pelo
+      tratamento de dados:</p>
+    <ul>
+      <li><strong>Nome/Responsável:</strong> Rafael Torres Nantes</li>
+      <li><strong>E-mail:</strong> <a href="mailto:rafatorresnantes@gmail.com">rafatorresnantes@gmail.com</a></li>
+    </ul>
+
+    <footer class="doc">
+      Election Assistant — operado por Rafael Torres Nantes (MEI, CNPJ 62.244.560/0001-49).
+      <a href="terms-of-service.html">Termos de Uso</a>.
+    </footer>
+  </div>
+</body>
+</html>

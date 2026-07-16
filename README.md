@@ -58,14 +58,23 @@ Cada app se materializa substituindo os marcadores. Os principais:
 Seções marcadas como **OPCIONAL** nos comentários HTML (integração com plataformas de terceiros,
 perfis de usuário, contexto regulado) devem ser removidas quando não se aplicam ao app.
 
+A **raiz** guarda o **template** com os `{{PLACEHOLDERS}}`. Cada aplicativo tem sua versão
+**preenchida** em `src/<nome-do-app>/`, reaproveitando o `styles.css` compartilhado da raiz. Hoje
+existe apenas o **Election Assistant**; novos apps ganham uma nova pasta em `src/`.
+
 ## 📁 Estrutura do projeto
 
 ```
 .
-├── index.html              # página inicial com links para os documentos
-├── privacy-policy.html     # Política de Privacidade (LGPD)
-├── terms-of-service.html   # Termos de Uso
-├── styles.css              # estilo compartilhado (claro/escuro)
+├── index.html                          # TEMPLATE — página inicial (placeholders)
+├── privacy-policy.html                 # TEMPLATE — Política de Privacidade (placeholders)
+├── terms-of-service.html               # TEMPLATE — Termos de Uso (placeholders)
+├── styles.css                          # estilo compartilhado (claro/escuro)
+├── src/
+│   └── election-assistant/             # versão preenchida por app
+│       ├── index.html
+│       ├── privacy-policy.html
+│       └── terms-of-service.html
 └── README.md
 ```
 
@@ -82,13 +91,14 @@ perfis de usuário, contexto regulado) devem ser removidas quando não se aplica
    python -m http.server 8000
    ```
 
-3. **Reutilize em um novo app:** copie os HTML e o `styles.css`, substitua os `{{PLACEHOLDERS}}`
-   e remova as seções opcionais que não se aplicam.
+3. **Crie um novo app:** duplique um dos HTML da raiz em `src/<nome-do-app>/`, ajuste o
+   `<link>` para `../../styles.css`, substitua os `{{PLACEHOLDERS}}` e remova as seções opcionais
+   que não se aplicam.
 
-4. **Publique via GitHub Pages:** em *Settings → Pages*, sirva a branch `main`. As páginas ficam
-   disponíveis em:
+4. **Publique via GitHub Pages:** em *Settings → Pages*, sirva a branch `main`. As páginas
+   preenchidas do **Election Assistant** ficam disponíveis em:
 
    | Documento | URL |
    |---|---|
-   | Política de Privacidade | https://rafael-torres-nantes.github.io/privacy-terms/privacy-policy.html |
-   | Termos de Uso | https://rafael-torres-nantes.github.io/privacy-terms/terms-of-service.html |
+   | Política de Privacidade | https://rafael-torres-nantes.github.io/privacy-terms/src/election-assistant/privacy-policy.html |
+   | Termos de Uso | https://rafael-torres-nantes.github.io/privacy-terms/src/election-assistant/terms-of-service.html |
